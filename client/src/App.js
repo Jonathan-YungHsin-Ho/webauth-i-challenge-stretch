@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import './App.css';
 
 // import Nav from './components/Nav';
@@ -13,6 +13,9 @@ function App() {
     <div className='App'>
       <h1>Users</h1>
       {/* <Nav /> */}
+      <Route exact path='/'>
+        <Redirect to='/login' />
+      </Route>
       <Route path='/login' component={Login} />
       <Route path='/register' component={Register} />
       <Route path='/users' component={Users} />
