@@ -1,22 +1,80 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 2rem;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: 'Roboto', sans-serif;
+  background-color: #e36417;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+h1 {
+  padding: 2rem 0;
+  border-bottom: 0.5rem solid white;
+}
+
+h2 {
+  padding: 1rem 0;
+}
+
+a {
+  color: white;
+  display: inline-block;
+  margin: 2rem 0;
+}
+
+.box {
+  border: 0.2rem solid white;
+  width: 96%;
+  max-width: 320px;
+  margin: 3rem auto;
+  padding: 1rem 0 2rem;
+}
+
+input {
+  padding: 0.4rem;
+}
+
+button {
+  font-family: inherit;
+  font-weight: bold;
+  background-color: white;
+  color: #e36417;
+  border: 0.2rem solid white;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  background-color: #e36417;
+}
+
+.logout {
+  color: white;
+  background-color: #e36417;
+  border: none;
+  text-decoration: underline;
+  font-weight: normal;
+  font-size: 2rem;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.error {
+  background-color: red;
 }
